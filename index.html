@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NLW - ESPORTS | Pietra.dev</title>
+    <link rel="shortcut icon" href="assets/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <img src="assets/assets/logo.png" alt="logo">
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2 class="title">Assistente de Meta</h2>
+                <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API key" required>
+                    
+                    <select id="games">
+                        <option value="">Selecione um jogo</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="csgo">CS:GO</option>
+                        <option value="clashroyale">Clash Royale</option>
+                        <option value="fifa">Fifa</option>
+                    </select>
+                    
+                    <input id="questionInput" type="text" placeholder="Melhor build para ADC...">
+
+                    <button id="askButton" type="submit">Perguntar</button>
+                </form>
+
+                <div id="aiResponse" class="hidden">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
